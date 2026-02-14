@@ -1,26 +1,39 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html  {
+    background-color: antiquewhite;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: 0px auto;
+    background-color: azure;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+div#navbar h2 {
+    display: inline-block;
+    margin: 20px;
+    background-color: rgb(250, 189, 108);
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+div#navbar h2:hover {
+    background-color: rgb(255, 215, 163);
+}
+
+div#counter button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+div#motivation {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div#calculator input, div#calculator select, div#calculator button {
+    margin: 10px;
+    font-size: 1em;
 }
